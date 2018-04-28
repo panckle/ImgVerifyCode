@@ -1,13 +1,12 @@
 import React, {PropTypes,Component} from 'react';
 import { Button, Row,Col, Form, Input,Icon,Checkbox} from 'antd';
 import styles from './Login.less';
-import topimg from '../assets/login/logo.png';
 import ImgValidator from './ImgValidator';
 
 
 class Login extends Component {
   submitting = false; //是否在提交，用于校验验证码，仅在提交的时候校验验证码
-  verifyCodeInput = undefined; // 保存验证码输入框的ref
+  verifyCodeInput = undefined; 
   constructor(props) {
     super(props);
     
